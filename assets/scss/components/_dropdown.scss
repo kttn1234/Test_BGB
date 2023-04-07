@@ -1,0 +1,21 @@
+.dropdown {
+  font-size: rem(11px);
+  color: $gray-18;
+
+  &__list {
+    display: none;
+  }
+  &__label {
+    position: relative;
+    padding-right: rem(16px);
+    font-weight: $font-semi-bold;
+  }
+  i {
+    position: absolute;
+    right: rem(4px);
+    font-size: rem(14px);
+    color: $gray-18;
+    top: 50%;
+    transform: translateY(-33%);
+  }
+}

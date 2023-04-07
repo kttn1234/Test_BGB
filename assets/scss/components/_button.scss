@@ -1,0 +1,20 @@
+.btn {
+  font-size: rem(16px);
+  font-weight: $font-semi-bold;
+  border-radius: rem(3px);
+  padding: rem(8px);
+  color: $white-01;
+  text-align: center;
+  border: none;
+  &.--orange {
+    font-size: rem(12px);
+    padding: rem(6px) rem(7px);
+    background-image: linear-gradient($ograne-01, $ograne-02);
+  }
+  &.--green {
+    background-image: linear-gradient($green-01, $green-02);
+  }
+  &.--yellow {
+    background-image: linear-gradient($yellow-01, $yellow-02);
+  }
+}

@@ -1,0 +1,103 @@
+.header {
+  &__top {
+    background-color: $gray-06;
+    @include mq(md, max) {
+      padding: rem(10px) 0;
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mq(md, max) {
+        display: block;
+      }
+    }
+
+    .btn.--orange {
+      margin-right: rem(7px);
+    }
+  }
+  &__link {
+    display: flex;
+    font-size: rem(11px);
+    color: $gray-18;
+    margin: rem(-10px) rem(-11px);
+    &-item {
+      padding: rem(10px) rem(11px);
+    }
+    @include mq(md, max) {
+      justify-content: space-between;
+    }
+  }
+  &__tools {
+    display: flex;
+    align-items: center;
+    @include mq(md, max) {
+      justify-content: space-between;
+      margin-top: rem(5px);
+    }
+  }
+  &__search-content {
+    position: relative;
+    .fa-magnifying-glass {
+      position: absolute;
+      right: rem(5px);
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: rem(18px);
+    }
+  }
+  &__search-inp {
+    background-color: $gray-02;
+    border: none;
+    border-radius: rem(2px);
+    padding: rem(5px) rem(5px);
+    min-width: rem(207px);
+    &:focus,
+    &:hover {
+      appearance: none;
+      outline: none;
+    }
+  }
+  &__social {
+    display: flex;
+    padding: 0 rem(5px);
+    &-item {
+      padding: rem(5px);
+    }
+    i {
+      font-size: rem(24px);
+      color: $gray-18;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: rem(1px) solid $green-03;
+    padding: rem(1px) 0 rem(4px);
+    @include mq(md, max) {
+      display: block;
+    }
+  }
+  &__menu {
+    display: flex;
+    font-size: rem(13px);
+    font-weight: $font-semi-bold;
+    text-transform: uppercase;
+    margin: 0 rem(-14px);
+    color: $gray-19;
+    @include mq(md, max) {
+      margin: 0 rem(-5px);
+      font-size: rem(11px);
+      justify-content: space-between;
+    }
+    &-item {
+      padding: 0 rem(14px);
+      @include mq(md, max) {
+        padding: 0 rem(5px);
+      }
+    }
+  }
+}

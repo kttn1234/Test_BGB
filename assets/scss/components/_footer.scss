@@ -1,0 +1,165 @@
+.footer {
+  margin-top: rem(18px);
+  position: relative;
+  &__main {
+    background-color: $gray-15;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(16px) rem(17px) 0 0;
+    @include mq(md, max) {
+      display: block;
+      padding: rem(17px);
+    }
+  }
+  &__logo {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: rem(314px);
+      height: rem(45px);
+      background-image: linear-gradient(to right, $gray-17, transparent);
+      position: absolute;
+      left: rem(-18px);
+    }
+    img {
+      position: relative;
+      z-index: 1;
+      padding-left: rem(14px);
+      width: rem(215px);
+      top: rem(-10px);
+    }
+  }
+  &__group {
+    margin: 0 rem(-5px);
+  }
+  &__item {
+    padding: 0 rem(5px);
+    &:nth-child(1) {
+      width: 34.5%;
+      @include mq(md, max) {
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      flex: 1;
+      @include mq(md, max) {
+        width: 100%;
+      }
+    }
+    &:nth-child(3) {
+      width: 21.3%;
+      @include mq(md, max) {
+        width: 100%;
+      }
+    }
+  }
+  &__social {
+    padding: rem(7px) 0 0 rem(28px);
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 rem(-8px) 0;
+      justify-content: center;
+      max-width: rem(214px);
+    }
+    &-item {
+      width: 20%;
+      padding: rem(8px);
+      a {
+        &:hover {
+          color: $blue-01;
+        }
+      }
+      i {
+        font-size: rem(30px);
+        color: $gray-16;
+      }
+    }
+  }
+  &__title {
+    color: $gray-16;
+    font-size: rem(12px);
+    text-transform: uppercase;
+    font-weight: $font-semi-bold;
+  }
+  &__company {
+    &-item {
+      display: flex;
+      padding: rem(15px) 0;
+      align-items: center;
+    }
+    &-block {
+      display: flex;
+      margin: 0 rem(-3px);
+      padding-left: rem(22px);
+    }
+    &-logo {
+      padding: 0 rem(3px);
+    }
+  }
+  &__newsletter {
+    background-color: $gray-09;
+    padding: rem(6px) rem(10px) rem(10px);
+    overflow: hidden;
+    &-title {
+      font-weight: $font-semi-bold;
+      color: $green-06;
+      text-transform: uppercase;
+      position: relative;
+      text-align: center;
+      margin-bottom: rem(10px);
+      font-size: rem(12px);
+      &::after {
+        content: "";
+        width: 93%;
+        height: rem(1px);
+        background-color: $green-06;
+        display: block;
+        position: absolute;
+        right: rem(-10px);
+        bottom: rem(-4px);
+      }
+    }
+    .btn.--green {
+      display: block;
+      width: 100%;
+      margin-top: rem(10px);
+    }
+  }
+  &__bottom {
+    padding: rem(8px) 0;
+    background-color: $gray-14;
+    color: $gray-13;
+    font-size: rem(10px);
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    display: flex;
+    margin: 0 rem(-10px);
+    &-item {
+      padding: 0 rem(10px);
+    }
+  }
+  &__copyright {
+    padding-right: rem(10px);
+  }
+}
+.live-chat {
+  background: url(/assets/img/common/img_chat_back.png) no-repeat;
+  background-size: rem(85px) rem(92px);
+  color: $gray-26;
+  position: fixed;
+  top: 40%;
+  right: rem(10px);
+  height: rem(85px);
+  width: rem(92px);
+  padding: rem(19px) rem(8px) 0 0;
+  text-align: center;
+  font-weight: $font-semi-bold;
+}

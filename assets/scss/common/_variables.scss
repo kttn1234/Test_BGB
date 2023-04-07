@@ -1,0 +1,67 @@
+// grid
+$grid-gutter-width: 15px !default;
+$container-width: 930px !default;
+
+$displays: none, block, flex !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+//font
+$font-Open-Sans: "Open Sans", sans-serif;
+
+$font-weight-bold: 700;
+$font-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+//color
+$white-01: #fff;
+
+$gray-01: #5c5c5c;
+$gray-02: #ccc;
+$gray-03: #7b7164;
+$gray-04: #737373;
+$gray-05: #909090;
+$gray-06: #292929;
+$gray-07: #eee;
+$gray-08: #ececec;
+$gray-09: #efefef;
+$gray-10: #fafafa;
+$gray-11: #b5b5b5;
+$gray-12: #f1f1f1;
+$gray-13: #6d6d6d;
+$gray-14: #262626;
+$gray-15: #464646;
+$gray-16: #c5c5c5;
+$gray-17: #ebebeb;
+$gray-18: #e0e0e0;
+$gray-19: #313131;
+$gray-20: #626262;
+$gray-21: #555555;
+$gray-22: #797979;
+$gray-23: #828282;
+$gray-24: #959595;
+$gray-25: #c1c1c1;
+$gray-26: #f5f5f5;
+
+$ograne-01: #e76955;
+$ograne-02: #d64837;
+
+$green-01: #77b02f;
+$green-02: #4c893a;
+$green-03: #4d8a3a;
+$green-04: #65a134;
+$green-05: #629e34;
+$green-06: #67a234;
+
+$yellow-01: #f6e10d;
+$yellow-02: #f2ce0d;
+
+$blue-01: #48cdff;

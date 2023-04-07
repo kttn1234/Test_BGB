@@ -1,0 +1,38 @@
+.form-group {
+  color: #959595;
+  select {
+    border: rem(1px) solid $gray-07;
+    appearance: none;
+    width: 100%;
+    padding: rem(8px);
+    border-radius: rem(3px);
+    font-size: rem(13px);
+  }
+  & + .form-group {
+    margin-top: rem(6px);
+  }
+}
+
+.select-tools {
+  position: relative;
+  i {
+    position: absolute;
+    right: rem(10px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.form-label {
+  font-size: rem(12px);
+}
+.textarea,
+.inp {
+  padding: rem(8px);
+  border-radius: rem(3px);
+  display: block;
+  width: 100%;
+  border: rem(1px) solid $gray-07;
+}
+.textarea {
+  height: rem(134px);
+}
