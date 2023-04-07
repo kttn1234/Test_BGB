@@ -22,7 +22,10 @@
       height: rem(45px);
       background-image: linear-gradient(to right, $gray-17, transparent);
       position: absolute;
-      left: rem(-18px);
+      left: 0;
+      @include mq(md, max) {
+        left: rem(-18px);
+      }
     }
     img {
       position: relative;

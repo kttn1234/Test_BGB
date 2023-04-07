@@ -388,7 +388,10 @@ img.alignleft {
       height: 2.8125rem;
       background-image: linear-gradient(to right, #ebebeb, transparent);
       position: absolute;
-      left: -1.125rem; }
+      left: 0; }
+      @media (max-width: 767px) {
+        .footer__logo::before {
+          left: -1.125rem; } }
     .footer__logo img {
       position: relative;
       z-index: 1;
